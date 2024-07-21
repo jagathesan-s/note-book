@@ -114,3 +114,43 @@ body{
 .popup-box textarea:focus{
     outline: none;
 }
+@media screen and (max-width:450px) {
+    .books-container{
+        width: 70%;
+        
+    }
+    .add-button{
+         position: fixed;
+         bottom: 2%;
+         right: 45%;
+    }
+    .popup-box{
+        width: 45%;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+         
+    }
+    
+}
+@media  screen and (max-width:850px) {
+    .books-container{
+        width: 80%;
+        
+    }
+    .add-button{
+         position: fixed;
+         bottom: 2%;
+         right: 45%;
+    }
+    .popup-box{
+        width: 45%;
+        height: 30%;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+         
+    }
+    /* mmedia queries  */
+    
+}
