@@ -23,13 +23,14 @@
                 <button onclick="deletebooks(event)">Delete</button>
         </div>
     </div>
+    
     <div class="popup-overlay"></div>
     <div class="popup-box">
         <h2>Add Book</h2>
-        <form >
-            <input type="text" placeholder="book title" id="book-title-input" >
-            <input type="text" placeholder="book-author" id="book-author-input"  >
-            <textarea placeholder="short description" id="book-description-input"  ></textarea>
+        <form method="post" action="/">
+            <input type="text" placeholder="book title" id="book-title-input" name="title">
+            <input type="text" placeholder="book-author" id="book-author-input" name="author" >
+            <textarea placeholder="short description" id="book-description-input" name="description" ></textarea>
             <button id="add-book">Add</button>
             <button id="cancel-book">Cancel</button>
         </form>
