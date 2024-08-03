@@ -26,7 +26,7 @@ var bookauthorinput=document.getElementById('book-author-input')
 var bookdescriptioninput=document.getElementById('book-description-input')
 
 
-
+/*
 addbook.addEventListener('click',(event)=>{
     event.preventDefault()
     if(booktitleinput.value!="" && bookauthorinput.value!="" &&bookdescriptioninput.value!=""){
@@ -91,7 +91,7 @@ addbook.addEventListener('click',(event)=>{
             
     
     }
-})
+})*/
 
 
 function deletebooks(event){
