@@ -26,25 +26,10 @@ var bookauthorinput=document.getElementById('book-author-input')
 var bookdescriptioninput=document.getElementById('book-description-input')
 
 
-/*
+
 addbook.addEventListener('click',(event)=>{
-    event.preventDefault()
-    if(booktitleinput.value!="" && bookauthorinput.value!="" &&bookdescriptioninput.value!=""){
-   var div=document.createElement("div")
-   div.setAttribute("class","books-container")
-   div.innerHTML=`<h2>${booktitleinput.value}</h2>
-   <h5>${bookauthorinput.value}</h5>
-            <p>${bookdescriptioninput.value}</p>
-                <button onclick=deletebooks(event)>Delete</button>`
-   container.append(div)
-     popupoverlay.style.display="none"
-    popupbox.style.display="none"
-    booktitleinput.value=""
-    bookauthorinput.value=""
-     bookdescriptioninput.value=""
-    }
-    else{
         if(booktitleinput.value=="" && bookauthorinput.value=="" &&bookdescriptioninput.value==""){
+            System.preventDefault();
             let msg=document.createElement("p")
             msg.innerHTML=" notes can't be empty"
             popupbox.appendChild(msg)
@@ -58,6 +43,7 @@ addbook.addEventListener('click',(event)=>{
             else{
                 
         if(booktitleinput.value==""){
+            System.preventDefault();
         let msg=document.createElement("p")
         msg.innerHTML="please enter the title"
         popupbox.appendChild(msg)
@@ -68,6 +54,7 @@ addbook.addEventListener('click',(event)=>{
         setInterval(()=>msg.style.display="none",3000);
         }
         if(bookauthorinput.value==""){
+            System.preventDefault();
             let msg=document.createElement("p")
             msg.innerHTML="please enter the  author name"
             popupbox.appendChild(msg)
@@ -78,6 +65,7 @@ addbook.addEventListener('click',(event)=>{
             setInterval(()=>msg.style.display="none",3000);
             }
             if(bookdescriptioninput.value==""){
+                System.preventDefault();
                 let msg=document.createElement("p")
                 msg.innerHTML=" please write something in description "
                 popupbox.appendChild(msg)
@@ -88,10 +76,7 @@ addbook.addEventListener('click',(event)=>{
                 setInterval(()=>msg.style.display="none",3000);
                 }
             }
-            
-    
-    }
-})*/
+});
 
 
 function deletebooks(event){
