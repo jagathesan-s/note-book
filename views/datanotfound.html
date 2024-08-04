@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error</title>
+    <style>
+        body{
+            margin: 0px;
+            width: 100%;
+            height: 40rem;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(filenotfound.jpeg);
+            background-repeat: no-repeat;
+        }
+        div{
+            padding: 0 10%;
+            padding-top: 5em;
+            padding-bottom: 5em;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid;
+            font-weight:bold;
+            font-size: 10px;
+            box-shadow: 10px 10px black;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.662);
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Data Not Found</h1>
+    <br>
+    <br><form action="" method="get">
+        <button>Try Again</button>
+    </form>
+    </div>
+    <script>
+        document.querySelector('button').onclick=()=>{
+            window.location.reload(true);
+        }
+    </script>
+</body>
+</html>
