@@ -2,7 +2,7 @@
   "name": "mini-project",
   "version": "1.0.0",
   "description": "",
-  "main": "/note-book/app.js",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon note-book/app.js"
   },
