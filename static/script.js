@@ -28,8 +28,9 @@ var bookdescriptioninput=document.getElementById('book-description-input')
 
 
 addbook.addEventListener('click',(event)=>{
-        if(booktitleinput.value=="" && bookauthorinput.value=="" &&bookdescriptioninput.value==""){
-            System.preventDefault();
+
+        if(booktitleinput.value=="" && bookauthorinput.value==""  &&bookdescriptioninput.value==""){
+            event.preventDefault();
             let msg=document.createElement("p")
             msg.innerHTML=" notes can't be empty"
             popupbox.appendChild(msg)
@@ -37,45 +38,48 @@ addbook.addEventListener('click',(event)=>{
             msg.style.fontSize="20px"
             msg.style.textTransform="capitalize"
             msg.style.borderRadius="10px"
-               msg.style.fontWeight="bold"
+            msg.style.fontWeight="bold"
             setInterval(()=>msg.style.display="none",3000);
-            }
-            else{
-                
-        if(booktitleinput.value==""){
-            System.preventDefault();
-        let msg=document.createElement("p")
-        msg.innerHTML="please enter the title"
-        popupbox.appendChild(msg)
-        msg.style.border="solid 2px black"
-            msg.style.fontSize="20px"
-            msg.style.textTransform="capitalize"
-             msg.style.borderRadius="10px"
-        setInterval(()=>msg.style.display="none",3000);
         }
-        if(bookauthorinput.value==""){
-            System.preventDefault();
-            let msg=document.createElement("p")
-            msg.innerHTML="please enter the  author name"
-            popupbox.appendChild(msg)
-            msg.style.border="solid 2px black"
-            msg.style.fontSize="20px"
-            msg.style.textTransform="capitalize"
-             msg.style.borderRadius="10px"
-            setInterval(()=>msg.style.display="none",3000);
+
+        else{
+                
+            if(booktitleinput.value==""){
+                event.preventDefault();
+                let msg=document.createElement("p")
+                msg.innerHTML="please enter the title"
+                popupbox.appendChild(msg)
+                msg.style.border="solid 2px black"
+                msg.style.fontSize="20px"
+                msg.style.textTransform="capitalize"
+                msg.style.borderRadius="10px"
+                setInterval(()=>msg.style.display="none",3000);
             }
+
+            if(bookauthorinput.value==""){
+                event.preventDefault();
+                let msg=document.createElement("p")
+                msg.innerHTML="please enter the  author name"
+                popupbox.appendChild(msg)
+                msg.style.border="solid 2px black"
+                msg.style.fontSize="20px"
+                msg.style.textTransform="capitalize"
+                msg.style.borderRadius="10px"
+                setInterval(()=>msg.style.display="none",3000);
+            }
+
             if(bookdescriptioninput.value==""){
-                System.preventDefault();
+                event.preventDefault();
                 let msg=document.createElement("p")
                 msg.innerHTML=" please write something in description "
                 popupbox.appendChild(msg)
                 msg.style.border="solid 2px black"
-            msg.style.fontSize="20px"
-            msg.style.textTransform="capitalize"
-             msg.style.borderRadius="10px"
+                msg.style.fontSize="20px"
+                msg.style.textTransform="capitalize"
+                msg.style.borderRadius="10px"
                 setInterval(()=>msg.style.display="none",3000);
-                }
             }
+        }
 });
 
 
