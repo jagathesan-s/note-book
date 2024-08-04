@@ -22,8 +22,16 @@
             <p>&nbsp;&nbsp;&nbsp;&nbsp; Create a responsive notes application using HTML, CSS, and JavaScript. Users can add and delete notes with a user-friendly interface.and ensure compatibility across devices. Focus on simplicity, usability.</p>
                 <button onclick="deletebooks(event)">Delete</button>
         </div>
+          {{#each data}}
+    <div class="books-container">
+        <h2>{{this.title}}</h2>
+        <h5>{{this.author}}</h5>
+        <p>{{this.description}}</p>
+        <button onclick=deletebooks(event)><a href="/delete_book/?delete_book={{this._id}}">Delete</a></button>
+        </div>
+    {{/each}}
     </div>
-    
+  
     <div class="popup-overlay"></div>
     <div class="popup-box">
         <h2>Add Book</h2>
